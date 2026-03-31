@@ -143,19 +143,10 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 .hero-cta svg{width:16px;height:16px;transition:transform 0.2s}
 .hero-cta:hover svg{transform:translateX(3px)}
 .hero-image{
-  /* PLACEHOLDER: Replace with hero product/arrangement photo */
   aspect-ratio:4/5;
   border-radius:12px;
-  background:
-    linear-gradient(145deg,#5e6e52 0%,#8fa67e 45%,#b5c4a8 100%);
-  position:relative;
+  background:url('images/hero.jpg') center/cover no-repeat;
   overflow:hidden;
-}
-.hero-image::after{
-  content:'arrangement photo';
-  position:absolute;bottom:24px;left:24px;
-  font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;
-  color:rgba(255,255,255,0.3);font-family:var(--font-body);font-weight:500;
 }
 
 /* ── FEATURE GRID ── */
@@ -221,16 +212,9 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   max-width:480px;
 }
 .mission-image{
-  /* PLACEHOLDER: Replace with installation/lobby photo */
   aspect-ratio:5/4;border-radius:12px;
-  background:linear-gradient(145deg,#3d4a35 0%,#5e6e52 50%,#8a9a7b 100%);
-  position:relative;overflow:hidden;
-}
-.mission-image::after{
-  content:'lobby installation photo';
-  position:absolute;bottom:24px;left:24px;
-  font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;
-  color:rgba(255,255,255,0.25);font-family:var(--font-body);font-weight:500;
+  background:url('images/mission.jpg') center/cover no-repeat;
+  overflow:hidden;
 }
 
 /* ── PROCESS ── */
@@ -532,7 +516,6 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
   </div>
-  <!-- PLACEHOLDER: Replace gradient with background-image: url('hero.jpg'); background-size:cover; -->
   <div class="hero-image"></div>
 </section>
 
@@ -577,7 +560,6 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
     <h2>To make every commercial space feel intentionally alive.</h2>
     <p>Most commercial spaces treat their environment as an afterthought. Stale florals, neglected plants, seasonal decor that never changes. Canopy exists because your space should reflect the standard you set for everything else.</p>
   </div>
-  <!-- PLACEHOLDER: Replace gradient with background-image: url('mission.jpg'); background-size:cover; -->
   <div class="mission-image"></div>
 </section>
 
