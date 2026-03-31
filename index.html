@@ -308,16 +308,9 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 .founder-name{font-size:0.875rem;font-weight:600;color:var(--text)}
 .founder-title{font-size:0.75rem;color:var(--text-light);margin-top:2px}
 .founder-image{
-  /* PLACEHOLDER: Replace with founder photo or arrangement detail */
   aspect-ratio:3/4;border-radius:12px;
-  background:linear-gradient(160deg,#4a5840 0%,#6b7f5e 50%,#8fa67e 100%);
-  position:relative;overflow:hidden;
-}
-.founder-image::after{
-  content:'founder photo';
-  position:absolute;bottom:24px;left:24px;
-  font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;
-  color:rgba(255,255,255,0.25);font-family:var(--font-body);font-weight:500;
+  background:url('images/founder.png') center/cover no-repeat;
+  overflow:hidden;
 }
 
 /* ── FAQ ── */
@@ -615,7 +608,6 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
         </div>
       </div>
     </div>
-    <!-- PLACEHOLDER: Replace gradient with background-image: url('founder.jpg'); background-size:cover; -->
     <div class="founder-image"></div>
   </div>
 </section>
