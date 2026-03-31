@@ -40,7 +40,7 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   color:#fff;
   text-align:center;
   padding:10px 20px;
-  font-size:13px;
+  font-size:0.8125rem;
   font-weight:500;
   letter-spacing:0.02em;
 }
@@ -60,22 +60,22 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 }
 .nav-logo{
   font-family:var(--font-display);
-  font-size:16px;
+  font-size:0.875rem;
   font-weight:500;
   color:var(--text);
   text-decoration:none;
-  letter-spacing:0.18em;
+  letter-spacing:0.12em;
   text-transform:uppercase;
 }
 .nav-links{display:flex;gap:32px}
 .nav-links a{
-  font-size:14px;font-weight:500;
+  font-size:0.875rem;font-weight:500;
   color:var(--text-mid);text-decoration:none;
   transition:color 0.2s;
 }
 .nav-links a:hover{color:var(--text)}
 .nav-cta{
-  font-size:13px;font-weight:600;
+  font-size:0.8125rem;font-weight:600;
   padding:10px 24px;
   background:var(--sage-dark);color:#fff;
   border:none;border-radius:6px;
@@ -95,28 +95,28 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   display:inline-flex;align-items:center;gap:6px;
   background:var(--sage-pale);
   padding:6px 14px;border-radius:100px;
-  font-size:12px;font-weight:600;color:var(--sage-dark);
+  font-size:0.75rem;font-weight:600;color:var(--sage-dark);
   letter-spacing:0.03em;
   margin-bottom:24px;
 }
 .hero-badge svg{width:14px;height:14px}
 .hero h1{
   font-family:var(--font-display);
-  font-size:56px;line-height:1.08;
+  font-size:clamp(2.4rem, 5.5vw, 3.5rem);line-height:1.08;
   font-weight:400;
   color:var(--text);
   margin-bottom:20px;
   letter-spacing:-0.02em;
 }
 .hero-sub{
-  font-size:17px;line-height:1.65;
+  font-size:1.0625rem;line-height:1.65;
   color:var(--text-mid);font-weight:400;
   margin-bottom:32px;
   max-width:460px;
 }
 .hero-cta{
   display:inline-flex;align-items:center;gap:8px;
-  font-size:14px;font-weight:600;
+  font-size:0.875rem;font-weight:600;
   padding:14px 32px;
   background:var(--sage-dark);color:#fff;
   border:none;border-radius:8px;
@@ -138,7 +138,7 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 .hero-image::after{
   content:'arrangement photo';
   position:absolute;bottom:24px;left:24px;
-  font-size:11px;letter-spacing:0.12em;text-transform:uppercase;
+  font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;
   color:rgba(255,255,255,0.3);font-family:var(--font-body);font-weight:500;
 }
 
@@ -168,12 +168,12 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 .feature-icon svg{width:20px;height:20px}
 .feature h3{
   font-family:var(--font-display);
-  font-size:20px;font-weight:400;
+  font-size:1.375rem;font-weight:500;
   margin-bottom:8px;
   color:var(--text);
 }
 .feature p{
-  font-size:14px;line-height:1.6;
+  font-size:0.9375rem;line-height:1.6;
   color:var(--text-mid);font-weight:400;
 }
 
@@ -187,20 +187,20 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 }
 .mission-inner{max-width:1200px;margin:0 auto;display:contents}
 .mission-tag{
-  font-size:11px;font-weight:600;
+  font-size:0.6875rem;font-weight:600;
   letter-spacing:0.15em;text-transform:uppercase;
   color:var(--sage-light);
   margin-bottom:20px;
 }
 .mission h2{
   font-family:var(--font-display);
-  font-size:40px;font-weight:400;line-height:1.2;
+  font-size:clamp(1.8rem, 3.5vw, 2.5rem);font-weight:400;line-height:1.2;
   color:var(--bg);
   margin-bottom:20px;
   letter-spacing:-0.01em;
 }
 .mission p{
-  font-size:16px;line-height:1.7;
+  font-size:1rem;line-height:1.7;
   color:rgba(240,235,227,0.55);font-weight:400;
   max-width:480px;
 }
@@ -213,7 +213,7 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 .mission-image::after{
   content:'lobby installation photo';
   position:absolute;bottom:24px;left:24px;
-  font-size:11px;letter-spacing:0.12em;text-transform:uppercase;
+  font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;
   color:rgba(255,255,255,0.25);font-family:var(--font-body);font-weight:500;
 }
 
@@ -226,13 +226,13 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   text-align:center;margin-bottom:64px;
 }
 .process-tag{
-  font-size:11px;font-weight:600;
+  font-size:0.6875rem;font-weight:600;
   letter-spacing:0.15em;text-transform:uppercase;
   color:var(--sage);margin-bottom:16px;
 }
 .process-header h2{
   font-family:var(--font-display);
-  font-size:38px;font-weight:400;
+  font-size:clamp(1.8rem, 3.5vw, 2.5rem);font-weight:400;
   color:var(--text);letter-spacing:-0.01em;
 }
 .process-steps{
@@ -247,15 +247,15 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   display:flex;align-items:center;justify-content:center;
   margin:0 auto 20px;
   font-family:var(--font-display);
-  font-size:20px;color:var(--sage-dark);
+  font-size:1.25rem;color:var(--sage-dark);
 }
 .step h3{
   font-family:var(--font-display);
-  font-size:18px;font-weight:400;
+  font-size:1.125rem;font-weight:400;
   margin-bottom:8px;color:var(--text);
 }
 .step p{
-  font-size:13px;line-height:1.6;
+  font-size:0.8125rem;line-height:1.6;
   color:var(--text-light);font-weight:400;
 }
 .step-connector{
@@ -278,18 +278,18 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   gap:80px;align-items:center;
 }
 .founder-tag{
-  font-size:11px;font-weight:600;
+  font-size:0.6875rem;font-weight:600;
   letter-spacing:0.15em;text-transform:uppercase;
   color:var(--sage);margin-bottom:20px;
 }
 .founder h2{
   font-family:var(--font-display);
-  font-size:32px;font-weight:400;line-height:1.3;
+  font-size:clamp(1.8rem, 3.5vw, 2.5rem);font-weight:400;line-height:1.3;
   color:var(--text);margin-bottom:16px;
   letter-spacing:-0.01em;
 }
 .founder-body{
-  font-size:15px;line-height:1.75;
+  font-size:0.9375rem;line-height:1.75;
   color:var(--text-mid);font-weight:400;
 }
 .founder-body p+p{margin-top:16px}
@@ -303,10 +303,10 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   width:48px;height:48px;border-radius:50%;
   background:var(--sage-pale);
   display:flex;align-items:center;justify-content:center;
-  font-family:var(--font-display);font-size:18px;color:var(--sage-dark);
+  font-family:var(--font-display);font-size:1.125rem;color:var(--sage-dark);
 }
-.founder-name{font-size:14px;font-weight:600;color:var(--text)}
-.founder-title{font-size:12px;color:var(--text-light);margin-top:2px}
+.founder-name{font-size:0.875rem;font-weight:600;color:var(--text)}
+.founder-title{font-size:0.75rem;color:var(--text-light);margin-top:2px}
 .founder-image{
   /* PLACEHOLDER: Replace with founder photo or arrangement detail */
   aspect-ratio:3/4;border-radius:12px;
@@ -316,7 +316,7 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 .founder-image::after{
   content:'founder photo';
   position:absolute;bottom:24px;left:24px;
-  font-size:11px;letter-spacing:0.12em;text-transform:uppercase;
+  font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;
   color:rgba(255,255,255,0.25);font-family:var(--font-body);font-weight:500;
 }
 
@@ -329,13 +329,13 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   text-align:center;margin-bottom:64px;
 }
 .faq-tag{
-  font-size:11px;font-weight:600;
+  font-size:0.6875rem;font-weight:600;
   letter-spacing:0.15em;text-transform:uppercase;
   color:var(--sage);margin-bottom:16px;
 }
 .faq-header h2{
   font-family:var(--font-display);
-  font-size:38px;font-weight:400;
+  font-size:clamp(1.8rem, 3.5vw, 2.5rem);font-weight:400;
   color:var(--text);letter-spacing:-0.01em;
 }
 .faq-grid{
@@ -349,11 +349,11 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 }
 .faq-item h3{
   font-family:var(--font-display);
-  font-size:18px;font-weight:400;
+  font-size:1.125rem;font-weight:400;
   color:var(--text);margin-bottom:10px;
 }
 .faq-item p{
-  font-size:14px;line-height:1.65;
+  font-size:0.9375rem;line-height:1.65;
   color:var(--text-mid);font-weight:400;
 }
 
@@ -365,12 +365,12 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 }
 .contact h2{
   font-family:var(--font-display);
-  font-size:38px;font-weight:400;
+  font-size:clamp(1.8rem, 3.5vw, 2.5rem);font-weight:400;
   color:var(--text);margin-bottom:12px;
   letter-spacing:-0.01em;
 }
 .contact>p{
-  font-size:16px;line-height:1.6;
+  font-size:1rem;line-height:1.6;
   color:var(--text-mid);margin-bottom:48px;
 }
 .form{text-align:left}
@@ -378,14 +378,14 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 .form-group{margin-bottom:16px}
 .form-label{
   display:block;
-  font-size:12px;font-weight:600;
+  font-size:0.75rem;font-weight:600;
   color:var(--text);
   margin-bottom:6px;
   letter-spacing:0.02em;
 }
 .form-input,.form-select,.form-textarea{
   width:100%;padding:12px 14px;
-  font-family:var(--font-body);font-size:14px;
+  font-family:var(--font-body);font-size:0.875rem;
   color:var(--text);
   background:var(--bg-card);
   border:1px solid var(--border);
@@ -401,51 +401,61 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 .form-textarea{resize:vertical;min-height:80px}
 .form-submit{
   width:100%;padding:14px;
-  font-family:var(--font-body);font-size:14px;font-weight:600;
+  font-family:var(--font-body);font-size:0.875rem;font-weight:600;
   background:var(--sage-dark);color:#fff;
   border:none;border-radius:8px;cursor:pointer;
   transition:all 0.25s;margin-top:8px;
 }
 .form-submit:hover{background:var(--sage);transform:translateY(-1px);box-shadow:0 4px 16px rgba(74,88,64,0.2)}
 .form-note{
-  font-size:12px;color:var(--text-light);
+  font-size:0.75rem;color:var(--text-light);
   margin-top:12px;text-align:center;
 }
 .form-success{display:none;padding:40px 0;text-align:center}
 .form-success.show{display:block}
 .form-success h3{
-  font-family:var(--font-display);font-size:28px;
+  font-family:var(--font-display);font-size:1.75rem;
   color:var(--sage-dark);margin-bottom:8px;
 }
-.form-success p{font-size:15px;color:var(--text-mid);line-height:1.6}
+.form-success p{font-size:0.9375rem;color:var(--text-mid);line-height:1.6}
 
 /* ── FOOTER ── */
 .footer{
   border-top:1px solid var(--border);
   padding:32px 48px;
   display:flex;justify-content:space-between;align-items:center;
-  font-size:13px;color:var(--text-light);
+  font-size:0.8125rem;color:var(--text-light);
 }
 .footer-logo{
   font-family:var(--font-display);
-  font-size:14px;font-weight:500;color:var(--text-mid);
+  font-size:0.875rem;font-weight:500;color:var(--text-mid);
   letter-spacing:0.18em;text-transform:uppercase;
 }
 .footer-links{display:flex;gap:24px}
-.footer-links a{color:var(--text-light);text-decoration:none;font-size:13px;transition:color 0.2s}
+.footer-links a{color:var(--text-light);text-decoration:none;font-size:0.8125rem;transition:color 0.2s}
 .footer-links a:hover{color:var(--text)}
-.footer-geo{font-size:12px;color:var(--text-light)}
+.footer-geo{font-size:0.75rem;color:var(--text-light)}
 
 /* ── REVEAL ── */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ── TABLET ── */
+@media(max-width:1024px){
+  .hero{padding:64px 48px 48px}
+  .features{padding:64px 48px}
+  .mission{padding:64px 48px}
+  .process{padding:64px 48px}
+  .founder-inner{padding:64px 48px}
+  .faq{padding:64px 48px}
+  .contact{padding:64px 48px}
+}
 
 /* ── MOBILE ── */
 @media(max-width:900px){
   .nav{padding:0 20px}
   .nav-links{display:none}
   .hero{grid-template-columns:1fr;padding:48px 20px;gap:40px}
-  .hero h1{font-size:36px}
   .hero-image{aspect-ratio:1/1}
   .features{padding:48px 20px}
   .features-grid{grid-template-columns:1fr}
@@ -458,12 +468,11 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   .faq{padding:64px 20px}
   .faq-grid{grid-template-columns:1fr}
   .contact{padding:64px 20px}
-  .contact h2{font-size:28px}
+  .step h3{font-size:1rem}
   .form-row{grid-template-columns:1fr}
   .footer{flex-direction:column;gap:16px;text-align:center;padding:24px 20px}
 }
 @media(max-width:480px){
-  .hero h1{font-size:30px}
   .process-steps{grid-template-columns:1fr}
 }
 </style>
