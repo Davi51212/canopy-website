@@ -431,9 +431,13 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   font-size:0.875rem;font-weight:500;color:var(--text-mid);
   letter-spacing:0.18em;text-transform:uppercase;
 }
-.footer-links{display:flex;gap:24px}
+.footer-links{display:flex;gap:24px;align-items:center}
 .footer-links a{color:var(--text-light);text-decoration:none;font-size:0.8125rem;transition:color 0.2s}
 .footer-links a:hover{color:var(--text)}
+.footer-social{display:flex;gap:16px;align-items:center}
+.footer-social a{display:flex;color:var(--text-light);transition:color 0.2s}
+.footer-social a:hover{color:var(--sage)}
+.footer-social svg{width:20px;height:20px}
 .footer-geo{font-size:0.75rem;color:var(--text-light)}
 
 /* ── REVEAL ── */
@@ -715,7 +719,10 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   <div class="footer-links">
     <a href="mailto:info@canopyenvironments.com">info@canopyenvironments.com</a>
     <a href="tel:+12125550100">(212) 555-0100</a>
-    <a href="https://instagram.com/canopyenvironments" target="_blank" rel="noopener">@canopyenvironments</a>
+  </div>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/canopyenvironments" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+    <a href="https://www.linkedin.com/company/canopy-environments" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
   </div>
   <span class="footer-geo">© 2026 Canopy Environments LLC · NYC</span>
 </footer>
