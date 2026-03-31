@@ -320,6 +320,43 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   color:rgba(255,255,255,0.25);font-family:var(--font-body);font-weight:500;
 }
 
+/* ── FAQ ── */
+.faq{
+  max-width:1200px;margin:0 auto;
+  padding:100px 48px;
+}
+.faq-header{
+  text-align:center;margin-bottom:64px;
+}
+.faq-tag{
+  font-size:11px;font-weight:600;
+  letter-spacing:0.15em;text-transform:uppercase;
+  color:var(--sage);margin-bottom:16px;
+}
+.faq-header h2{
+  font-family:var(--font-display);
+  font-size:38px;font-weight:400;
+  color:var(--text);letter-spacing:-0.01em;
+}
+.faq-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:1px;background:var(--border);
+  border:1px solid var(--border);border-radius:12px;overflow:hidden;
+}
+.faq-item{
+  background:var(--bg-card);
+  padding:32px;
+}
+.faq-item h3{
+  font-family:var(--font-display);
+  font-size:18px;font-weight:400;
+  color:var(--text);margin-bottom:10px;
+}
+.faq-item p{
+  font-size:14px;line-height:1.65;
+  color:var(--text-mid);font-weight:400;
+}
+
 /* ── CONTACT ── */
 .contact{
   max-width:680px;margin:0 auto;
@@ -418,6 +455,8 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   .step-connector{display:none}
   .founder-inner{grid-template-columns:1fr;padding:48px 20px;gap:40px}
   .founder-image{aspect-ratio:1/1;max-height:400px}
+  .faq{padding:64px 20px}
+  .faq-grid{grid-template-columns:1fr}
   .contact{padding:64px 20px}
   .contact h2{font-size:28px}
   .form-row{grid-template-columns:1fr}
@@ -565,11 +604,11 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   <div class="founder-inner">
     <div>
       <p class="founder-tag">A Note from the Founder</p>
-      <h2>I built Canopy because the current options aren't good enough.</h2>
+      <h2>I started Canopy because the options weren't good enough.</h2>
       <div class="founder-body">
-        <p>If you're a GM at a boutique hotel or a restaurant owner in New York, your options for floral programs are either wildly expensive design studios or underwhelming weekly deliveries that look tired by Wednesday.</p>
-        <p>Canopy sits in the middle. Premium design sourced straight from the 28th Street Flower District, installed before your first guest walks in, managed week after week so you never have to think about it. All at a price that makes sense for a recurring program, not a one-time event.</p>
-        <p>Your space deserves better than what's out there. That's why I'm building this.</p>
+        <p>If you're a GM at a boutique hotel or a restaurant owner in New York, your choices for floral programs come down to two: overpriced design studios charging event rates for weekly work, or underwhelming delivery services that look tired by Wednesday.</p>
+        <p>Canopy sits in the middle. Premium design sourced directly from the 28th Street Flower District, installed before your first guest walks in, managed week after week so you never think about it. At a price that makes sense for a recurring program — not a one-time event.</p>
+        <p>Your space deserves better than what's out there.</p>
       </div>
       <div class="founder-sig">
         <div class="founder-avatar">D</div>
@@ -581,6 +620,40 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
     </div>
     <!-- PLACEHOLDER: Replace gradient with background-image: url('founder.jpg'); background-size:cover; -->
     <div class="founder-image"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq reveal">
+  <div class="faq-header">
+    <p class="faq-tag">Common Questions</p>
+    <h2>Everything you need to know</h2>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <h3>What areas do you serve?</h3>
+      <p>We currently serve Flatiron, NoMad, Gramercy, and surrounding neighborhoods in Manhattan. Route density is how we keep quality high and pricing fair.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is there a minimum commitment?</h3>
+      <p>No long-term contracts. All programs are month-to-month with 30 days notice. We earn your business every week.</p>
+    </div>
+    <div class="faq-item">
+      <h3>When do installs happen?</h3>
+      <p>Before your doors open. All arrangements are installed early morning so your space is ready before your first guest arrives.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do I need to provide vases or vessels?</h3>
+      <p>No. We provide, maintain, and rotate all vessels as part of your program. Nothing for you to buy or store.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What do programs cost?</h3>
+      <p>Programs start at $600/month for 1–2 placements. Most hotel and restaurant clients are in the $1,500–$3,000 range for 3–5 coordinated placements. We quote after a walkthrough so pricing reflects your actual space.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I adjust my program seasonally?</h3>
+      <p>Absolutely. Your palette evolves with the seasons automatically, and you can scale placements up or down for holidays, events, or seasonal changes.</p>
+    </div>
   </div>
 </section>
 
