@@ -400,12 +400,18 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   margin-top:12px;text-align:center;
 }
 .form-success{display:none;padding:40px 0;text-align:center}
-.form-success.show{display:block}
+.form-success.show{display:block;animation:fadeUp 0.5s ease}
 .form-success h3{
   font-family:var(--font-display);font-size:1.75rem;
   color:var(--sage-dark);margin-bottom:8px;
 }
 .form-success p{font-size:0.9375rem;color:var(--text-mid);line-height:1.6}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.form-error{
+  font-size:0.8125rem;color:#b44;line-height:1.5;
+  margin-top:12px;text-align:center;display:none;
+}
+.form-error.show{display:block}
 
 /* ── FOOTER ── */
 .footer{
@@ -760,12 +766,13 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
       </div>
       <button type="submit" class="form-submit">Send Inquiry</button>
       <p class="form-note">We respond within 24 hours. No commitments, no pressure.</p>
+      <p class="form-error" id="formError">Something went wrong. Please email us directly at <a href="mailto:info@canopyenvironments.com" style="color:inherit;text-decoration:underline">info@canopyenvironments.com</a></p>
     </form>
   </div>
 
   <div class="form-success" id="formSuccess">
     <h3>Thank you.</h3>
-    <p>We've received your inquiry and will be in touch within 24 hours to schedule a walkthrough.</p>
+    <p>We've received your inquiry and will be in touch within 24 hours to schedule a walkthrough of your space.</p>
   </div>
 </section>
 
@@ -801,6 +808,33 @@ if(parallaxEls.length&&window.matchMedia('(min-width:901px)').matches){
       el.style.transform='translateY('+offset+'px)';
     });
   },{passive:true});
+}
+
+// Form submission via fetch
+const form=document.getElementById('inquiryForm');
+if(form){
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    const btn=form.querySelector('.form-submit');
+    const err=document.getElementById('formError');
+    btn.textContent='Sending...';btn.disabled=true;
+    err.classList.remove('show');
+    fetch(form.action,{
+      method:'POST',
+      body:new FormData(form),
+      headers:{'Accept':'application/json'}
+    }).then(r=>{
+      if(r.ok){
+        document.getElementById('formWrap').style.display='none';
+        document.getElementById('formSuccess').classList.add('show');
+      }else{
+        throw new Error('submit failed');
+      }
+    }).catch(()=>{
+      err.classList.add('show');
+      btn.textContent='Send Inquiry';btn.disabled=false;
+    });
+  });
 }
 
 // Smooth scroll
