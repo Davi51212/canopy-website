@@ -21,6 +21,8 @@
 <meta name="twitter:description" content="We design, install, and maintain plant and floral programs for hotels, restaurants, and premium workspaces across Flatiron, NoMad, and Gramercy.">
 <meta name="twitter:image" content="https://canopyenvironments.com/images/og-image.png">
 
+<link rel="canonical" href="https://canopyenvironments.com">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -39,10 +41,8 @@
   --sage-light:#8FA67E;
   --sage-pale:#E8EDE4;
   --sage-dark:#4A5840;
-  --bronze:#B8956A;
   --bronze-light:#D4B892;
   --border:#E5E0D8;
-  --white:#FFFFFF;
   --font-display:'Cormorant Garamond', Georgia, serif;
   --font-body:'DM Sans', system-ui, sans-serif;
 }
@@ -190,7 +190,6 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   gap:80px;align-items:center;
   max-width:100%;
 }
-.mission-inner{max-width:1200px;margin:0 auto;display:contents}
 .mission-tag{
   font-size:0.6875rem;font-weight:600;
   letter-spacing:0.15em;text-transform:uppercase;
@@ -211,7 +210,7 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 }
 .mission-image{
   aspect-ratio:5/4;
-  background:url('images/Mission.png') center/cover no-repeat;
+  background:url('images/mission.jpg') center/cover no-repeat;
 }
 
 /* ── PROCESS ── */
@@ -305,9 +304,8 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 .founder-name{font-size:0.875rem;font-weight:600;color:var(--text)}
 .founder-title{font-size:0.75rem;color:var(--text-light);margin-top:2px}
 .founder-image{
-  aspect-ratio:3/4;border-radius:12px;
+  aspect-ratio:3/4;
   background:url('images/Founder.png') center/cover no-repeat;
-  overflow:hidden;
 }
 
 /* ── FAQ ── */
@@ -447,16 +445,13 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   color:#fff;
 }
 
-/* ── IMAGE HOVER SCALE ── */
-.parallax-wrap{transition:transform 0.5s ease}
-.parallax-wrap:hover{transform:scale(1.02)}
-
 /* ── CTA PULSE ── */
 @keyframes ctaPulse{
   0%,100%{box-shadow:0 0 0 0 rgba(74,88,64,0)}
   50%{box-shadow:0 0 0 10px rgba(74,88,64,0.12)}
 }
 .hero-cta{animation:ctaPulse 3s ease-in-out infinite}
+.hero-cta:hover{animation-play-state:paused}
 
 /* ── REVEAL ── */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease}
@@ -473,7 +468,8 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 .reveal.visible .stagger:nth-child(6){transition-delay:0.5s}
 
 /* ── PARALLAX ── */
-.parallax-wrap{overflow:hidden;border-radius:12px}
+.parallax-wrap{overflow:hidden;border-radius:12px;transition:transform 0.5s ease}
+.parallax-wrap:hover{transform:scale(1.02)}
 .parallax-img{will-change:transform;height:110%;margin-top:-5%}
 
 /* ── TABLET ── */
@@ -508,10 +504,40 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
   .form-row{grid-template-columns:1fr}
   .footer{flex-direction:column;gap:16px;text-align:center;padding:24px 20px}
 }
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  .reveal .stagger{opacity:1;transform:none}
+  .parallax-img{height:100%;margin-top:0}
+}
 @media(max-width:480px){
   .process-steps{grid-template-columns:1fr}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Canopy Environments",
+  "description": "We design, install, and maintain plant and floral programs for hotels, restaurants, and premium workspaces across Flatiron, NoMad, and Gramercy.",
+  "url": "https://canopyenvironments.com",
+  "telephone": "(212) 555-0100",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Flatiron, NoMad, Gramercy, Manhattan, NY"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.instagram.com/canopyenvironments",
+    "https://www.linkedin.com/company/canopy-environments"
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -573,7 +599,7 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
       </div>
       <h3>One Vendor. One Invoice.</h3>
-      <p>Stop managing multiple vendors for plants, flowers, and seasonal decor. We consolidate it into one program, one point of contact, one monthly bill.</p>
+      <p>Stop managing multiple vendors for plants, florals, and seasonal decor. We consolidate it into one program, one point of contact, one monthly bill.</p>
     </div>
     <div class="feature">
       <div class="feature-icon">
@@ -647,7 +673,7 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
         </div>
       </div>
     </div>
-    <div class="founder-image"></div>
+    <div class="parallax-wrap"><div class="founder-image parallax-img"></div></div>
   </div>
 </section>
 
@@ -679,11 +705,12 @@ body{font-family:var(--font-body);color:var(--text);background:var(--bg);-webkit
 
 <!-- CONTACT -->
 <section class="contact reveal" id="contact">
-  <h2>Let's talk about your space</h2>
-  <p>Tell us about your property and we'll put together a complimentary proposal, including a walkthrough, placement plan, and pricing.</p>
+  <h2 class="stagger">Let's talk about your space</h2>
+  <p class="stagger">Tell us about your property and we'll put together a complimentary proposal, including a walkthrough, placement plan, and pricing.</p>
 
   <div id="formWrap">
-    <form class="form" id="inquiryForm" onsubmit="handleSubmit(event)">
+    <form class="form" id="inquiryForm" method="POST" action="https://formspree.io/f/xplaceholder">
+      <input type="hidden" name="_next" value="https://canopyenvironments.com">
       <div class="form-row">
         <div class="form-group">
           <label class="form-label">First Name</label>
@@ -774,17 +801,6 @@ if(parallaxEls.length&&window.matchMedia('(min-width:901px)').matches){
       el.style.transform='translateY('+offset+'px)';
     });
   },{passive:true});
-}
-
-// Form
-function handleSubmit(e){
-  e.preventDefault();
-  // TODO: Wire to Formspree, Netlify, or your backend
-  document.getElementById('formWrap').style.display='none';
-  document.getElementById('formSuccess').classList.add('show');
-  const d=new FormData(e.target),o={};
-  d.forEach((v,k)=>o[k]=v);
-  console.log('Lead:',o);
 }
 
 // Smooth scroll
